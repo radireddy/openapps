@@ -1,0 +1,107 @@
+import { ComponentType } from '@/types';
+import { ComponentTemplate } from '../types';
+
+export const authorCardTemplate: ComponentTemplate = {
+  id: 'author-card',
+  name: 'Author Card',
+  description: 'Profile card with avatar, name, role, and bio',
+  icon: 'UserCircle',
+  components: [
+    {
+      type: ComponentType.CONTAINER,
+      name: 'Author Card',
+      props: {
+        width: '100%',
+        height: 'auto',
+        backgroundColor: '{{theme.colors.surface}}',
+        flexDirection: 'row',
+        justifyContent: 'flex-start',
+        alignItems: 'flex-start',
+        gap: '{{theme.spacing.lg}}',
+        padding: '{{theme.spacing.lg}}',
+        borderWidth: '1px',
+        borderStyle: 'solid',
+        borderColor: '{{theme.colors.border}}',
+        borderRadius: '{{theme.radius.lg}}',
+      },
+      children: [
+        {
+          type: ComponentType.IMAGE,
+          name: 'Avatar',
+          props: {
+            src: 'https://picsum.photos/80/80',
+            alt: 'Author avatar',
+            width: 64,
+            height: 64,
+            objectFit: 'cover',
+            borderRadius: '{{theme.radius.full}}',
+          },
+        },
+        {
+          type: ComponentType.CONTAINER,
+          name: 'Author Info',
+          props: {
+            width: 'auto',
+            height: 'auto',
+            backgroundColor: 'transparent',
+            flexDirection: 'column',
+            justifyContent: 'flex-start',
+            alignItems: 'flex-start',
+            gap: '{{theme.spacing.xs}}',
+            padding: '0px',
+            borderWidth: '0px',
+            flexGrow: 1,
+          },
+          children: [
+            {
+              type: ComponentType.LABEL,
+              name: 'Author Name',
+              props: {
+                text: 'Jane Cooper',
+                width: '100%',
+                height: 'auto',
+                fontSize: '{{theme.typography.fontSizeLg}}',
+                fontWeight: '{{theme.typography.fontWeightSemibold}}',
+                color: '{{theme.colors.text}}',
+                fontFamily: '{{theme.typography.fontFamilyHeading}}',
+                backgroundColor: 'transparent',
+                textAlign: 'left',
+              },
+            },
+            {
+              type: ComponentType.LABEL,
+              name: 'Author Role',
+              props: {
+                text: 'Senior Product Designer',
+                width: '100%',
+                height: 'auto',
+                fontSize: '{{theme.typography.fontSizeSm}}',
+                fontWeight: '{{theme.typography.fontWeightMedium}}',
+                color: '{{theme.colors.onSurface}}',
+                fontFamily: '{{theme.typography.fontFamily}}',
+                backgroundColor: 'transparent',
+                textAlign: 'left',
+              },
+            },
+            {
+              type: ComponentType.LABEL,
+              name: 'Author Bio',
+              props: {
+                text: 'Passionate about creating intuitive user experiences. Specializing in design systems and accessibility.',
+                width: '100%',
+                height: 'auto',
+                fontSize: '{{theme.typography.fontSizeMd}}',
+                fontWeight: '{{theme.typography.fontWeightNormal}}',
+                color: '{{theme.colors.onSurface}}',
+                fontFamily: '{{theme.typography.fontFamily}}',
+                backgroundColor: 'transparent',
+                textAlign: 'left',
+                lineHeight: '{{theme.typography.lineHeightRelaxed}}',
+              },
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};

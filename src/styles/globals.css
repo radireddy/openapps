@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@import './themes.css';
+@config "../../tailwind.config.js";
+
+/* Base transitions for smooth theme switching */
+@layer base {
+  html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    background-color: var(--ed-bg-secondary);
+    color: var(--ed-text);
+  }
+  *,
+  *::before,
+  *::after {
+    transition-property: color, background-color, border-color, box-shadow;
+    transition-duration: 0ms; /* off by default */
+  }
+  [data-theme-transitioning] *,
+  [data-theme-transitioning] *::before,
+  [data-theme-transitioning] *::after {
+    transition-duration: 200ms !important;
+    transition-timing-function: ease-in-out;
+  }
+}
+
+/* Editor utility classes */
+@layer utilities {
+  .ed-skeleton {
+    background: linear-gradient(
+      90deg,
+      var(--ed-bg-tertiary) 25%,
+      var(--ed-bg-hover) 50%,
+      var(--ed-bg-tertiary) 75%
+    );
+    background-size: 200% 100%;
+    animation: ed-skeleton 1.5s ease-in-out infinite;
+  }
+
+  .ed-glass {
+    backdrop-filter: blur(var(--ed-overlay-blur));
+    -webkit-backdrop-filter: blur(var(--ed-overlay-blur));
+  }
+
+  .ed-card-interactive {
+    transition: transform var(--ed-duration-normal) ease, box-shadow var(--ed-duration-normal) ease;
+  }
+  .ed-card-interactive:hover {
+    transform: translateY(-2px);
+  }
+}

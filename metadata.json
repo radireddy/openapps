@@ -1,0 +1,5 @@
+{
+  "name": "AiApps",
+  "description": "An advanced low-code/no-code application builder that allows users to visually design, build, and preview web applications. It features a drag-and-drop interface with component nesting, a pluggable component architecture, persistence via browser storage, and an AI-powered generation feature. New components include layout stacks, radio groups, and switches.",
+  "requestFramePermissions": []
+}

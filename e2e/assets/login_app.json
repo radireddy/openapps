@@ -1,0 +1,205 @@
+{
+  "id": "app_1763284791674",
+  "name": "Login",
+  "createdAt": "2025-11-16T09:19:51.674Z",
+  "lastModifiedAt": "2025-11-16T09:23:48.960Z",
+  "pages": [
+    {
+      "id": "page_1763284791674",
+      "name": "Main Page"
+    }
+  ],
+  "mainPageId": "page_1763284791674",
+  "components": [
+    {
+      "id": "FORM_LOGIN",
+      "type": "FORM",
+      "pageId": "page_1763284791674",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "0px 4px 15px rgba(0, 0, 0, 0.1)",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "{{theme.border.style}}",
+        "width": 400,
+        "height": 350,
+        "backgroundColor": "{{theme.colors.surface}}",
+        "backgroundGradient": "",
+        "x": 221,
+        "y": 81
+      }
+    },
+    {
+      "id": "LABEL_TITLE",
+      "type": "LABEL",
+      "pageId": "page_1763284791674",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "none",
+        "text": "Login",
+        "width": 120,
+        "height": 35,
+        "fontSize": "20",
+        "fontWeight": "bold",
+        "color": "{{theme.colors.text}}",
+        "textAlign": "center",
+        "fontFamily": "{{theme.font.family}}",
+        "backgroundColor": "transparent",
+        "x": 147,
+        "y": 29
+      },
+      "parentId": "FORM_LOGIN"
+    },
+    {
+      "id": "INPUT_USERNAME",
+      "type": "INPUT",
+      "pageId": "page_1763284791674",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "{{theme.border.style}}",
+        "placeholder": "Username or Email",
+        "accessibilityLabel": "Text input field for username",
+        "width": 300,
+        "height": 40,
+        "disabled": false,
+        "x": 50,
+        "y": 90
+      },
+      "parentId": "FORM_LOGIN"
+    },
+    {
+      "id": "INPUT_PASSWORD",
+      "type": "INPUT",
+      "pageId": "page_1763284791674",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "{{theme.border.style}}",
+        "placeholder": "Password",
+        "accessibilityLabel": "Text input field for password",
+        "width": 300,
+        "height": 40,
+        "disabled": false,
+        "x": 50,
+        "y": 150
+      },
+      "parentId": "FORM_LOGIN"
+    },
+    {
+      "id": "BUTTON_LOGIN",
+      "type": "BUTTON",
+      "pageId": "page_1763284791674",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "none",
+        "text": "Login",
+        "width": 113,
+        "height": 36,
+        "backgroundColor": "{{theme.colors.primary}}",
+        "textColor": "{{theme.colors.onPrimary}}",
+        "actionType": "none",
+        "disabled": false,
+        "x": 51,
+        "y": 220
+      },
+      "parentId": "FORM_LOGIN"
+    },
+    {
+      "id": "LABEL_FORGOT_PASSWORD",
+      "type": "LABEL",
+      "pageId": "page_1763284791674",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "none",
+        "text": "Forgot Password?",
+        "width": 178,
+        "height": 33,
+        "fontSize": 16,
+        "fontWeight": "normal",
+        "color": "{{theme.colors.primary}}",
+        "textAlign": "center",
+        "fontFamily": "{{theme.font.family}}",
+        "backgroundColor": "transparent",
+        "x": 106,
+        "y": 285
+      },
+      "parentId": "FORM_LOGIN"
+    },
+    {
+      "id": "BUTTON_1763284930798",
+      "type": "BUTTON",
+      "pageId": "page_1763284791674",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "none",
+        "text": "Reset",
+        "width": 89,
+        "height": 36,
+        "backgroundColor": "{{theme.colors.secondary}}",
+        "textColor": "{{theme.colors.onSecondary}}",
+        "actionType": "none",
+        "disabled": false,
+        "x": 192.75,
+        "y": 217.5
+      },
+      "parentId": "FORM_LOGIN"
+    }
+  ],
+  "dataStore": {
+    "selectedRecord": null,
+    "username": "",
+    "password": ""
+  },
+  "variables": [],
+  "theme": {
+    "colors": {
+      "primary": "#4F46E5",
+      "onPrimary": "#FFFFFF",
+      "secondary": "#06B6D4",
+      "onSecondary": "#FFFFFF",
+      "background": "#FFFFFF",
+      "surface": "#F5F5F5",
+      "text": "#1A1A1A",
+      "border": "#D1D1D1"
+    },
+    "font": {
+      "family": "Segoe UI, sans-serif"
+    },
+    "border": {
+      "width": "1px",
+      "style": "solid"
+    },
+    "radius": {
+      "default": "4px"
+    },
+    "spacing": {
+      "sm": "4px",
+      "md": "8px",
+      "lg": "16px"
+    }
+  }
+}

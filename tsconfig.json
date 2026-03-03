@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "module": "ESNext",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "baseUrl": ".",
+    "skipLibCheck": true,
+    "types": [
+      "node",
+      "vite/client",
+      "jest",
+      "@testing-library/jest-dom"
+    ],
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+  }
+  ,
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "src/**/__tests__/**",
+    "src/**/__mocks__/**",
+    "e2e/**",
+    "coverage/**",
+    "node_modules/**",
+    "playwright.config.ts",
+    "vite.config.ts",
+    "jest.config.js"
+  ]
+}

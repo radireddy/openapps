@@ -1,0 +1,149 @@
+/* ============================================
+   DARK THEME (Default)
+   Inspired by: VS Code Dark+, Figma, Linear
+   ============================================ */
+[data-theme="dark"] {
+  /* Backgrounds */
+  --ed-bg:              #0e0f1a;
+  --ed-bg-secondary:    #151621;
+  --ed-bg-tertiary:     #1c1d2b;
+  --ed-bg-surface:      #232435;
+  --ed-bg-hover:        #2a2b3d;
+
+  /* Text */
+  --ed-text:            #e4e4ed;
+  --ed-text-secondary:  #9194a8;
+  --ed-text-tertiary:   #5f6278;
+  --ed-text-inverse:    #0e0f1a;
+
+  /* Borders */
+  --ed-border:          #2a2b3d;
+  --ed-border-secondary:#353649;
+  --ed-border-focus:    #6366f1;
+
+  /* Accent (Indigo) */
+  --ed-accent:          #6366f1;
+  --ed-accent-hover:    #818cf8;
+  --ed-accent-muted:    rgba(99, 102, 241, 0.15);
+  --ed-accent-text:     #a5b4fc;
+
+  /* Status */
+  --ed-success:         #10b981;
+  --ed-success-muted:   rgba(16, 185, 129, 0.15);
+  --ed-warning:         #f59e0b;
+  --ed-warning-muted:   rgba(245, 158, 11, 0.15);
+  --ed-danger:          #ef4444;
+  --ed-danger-muted:    rgba(239, 68, 68, 0.15);
+  --ed-info:            #06b6d4;
+  --ed-info-muted:      rgba(6, 182, 212, 0.15);
+
+  /* Radius */
+  --ed-radius-sm:       4px;
+  --ed-radius:          6px;
+  --ed-radius-lg:       10px;
+
+  /* Shadows */
+  --ed-shadow-sm:       0 1px 2px rgba(0, 0, 0, 0.3);
+  --ed-shadow:          0 2px 8px rgba(0, 0, 0, 0.4);
+  --ed-shadow-lg:       0 8px 24px rgba(0, 0, 0, 0.5);
+  --ed-shadow-xs:       0 1px 1px rgba(0, 0, 0, 0.2);
+  --ed-shadow-xl:       0 12px 36px rgba(0, 0, 0, 0.6);
+  --ed-shadow-header:   0 1px 3px rgba(0, 0, 0, 0.4), 0 0 1px rgba(0, 0, 0, 0.3);
+  --ed-shadow-card:     0 2px 6px rgba(0, 0, 0, 0.3);
+  --ed-shadow-card-hover: 0 8px 20px rgba(0, 0, 0, 0.45);
+  --ed-shadow-dropdown: 0 4px 16px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0.3);
+  --ed-shadow-modal:    0 16px 48px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.4);
+
+  /* Canvas */
+  --ed-canvas-bg:       #1a1b2e;
+
+  /* Animation durations */
+  --ed-duration-fast:   100ms;
+  --ed-duration-normal: 200ms;
+  --ed-duration-slow:   300ms;
+
+  /* Properties Panel enhancements */
+  --ed-input-shadow-inner:    inset 0 1px 2px rgba(0,0,0,0.15);
+  --ed-glow-accent:           0 0 0 3px rgba(99,102,241,0.15);
+  --ed-section-gradient-from: rgba(99,102,241,0.08);
+  --ed-section-gradient-to:   transparent;
+
+  /* Overlay */
+  --ed-overlay:         rgba(0, 0, 0, 0.6);
+  --ed-overlay-blur:    8px;
+}
+
+/* ============================================
+   LIGHT THEME
+   Clean, airy, professional
+   ============================================ */
+[data-theme="light"] {
+  /* Backgrounds */
+  --ed-bg:              #ffffff;
+  --ed-bg-secondary:    #f8f9fb;
+  --ed-bg-tertiary:     #f0f1f5;
+  --ed-bg-surface:      #e8eaef;
+  --ed-bg-hover:        #eef0f4;
+
+  /* Text */
+  --ed-text:            #111827;
+  --ed-text-secondary:  #6b7280;
+  --ed-text-tertiary:   #9ca3af;
+  --ed-text-inverse:    #ffffff;
+
+  /* Borders */
+  --ed-border:          #e2e4ea;
+  --ed-border-secondary:#d0d3db;
+  --ed-border-focus:    #4f46e5;
+
+  /* Accent (Indigo) */
+  --ed-accent:          #4f46e5;
+  --ed-accent-hover:    #4338ca;
+  --ed-accent-muted:    rgba(79, 70, 229, 0.08);
+  --ed-accent-text:     #4f46e5;
+
+  /* Status */
+  --ed-success:         #059669;
+  --ed-success-muted:   rgba(5, 150, 105, 0.08);
+  --ed-warning:         #d97706;
+  --ed-warning-muted:   rgba(217, 119, 6, 0.08);
+  --ed-danger:          #dc2626;
+  --ed-danger-muted:    rgba(220, 38, 38, 0.08);
+  --ed-info:            #0891b2;
+  --ed-info-muted:      rgba(8, 145, 178, 0.08);
+
+  /* Radius */
+  --ed-radius-sm:       4px;
+  --ed-radius:          6px;
+  --ed-radius-lg:       10px;
+
+  /* Shadows */
+  --ed-shadow-sm:       0 1px 2px rgba(0, 0, 0, 0.05);
+  --ed-shadow:          0 2px 8px rgba(0, 0, 0, 0.08);
+  --ed-shadow-lg:       0 8px 24px rgba(0, 0, 0, 0.12);
+  --ed-shadow-xs:       0 1px 1px rgba(0, 0, 0, 0.03);
+  --ed-shadow-xl:       0 12px 36px rgba(0, 0, 0, 0.15);
+  --ed-shadow-header:   0 1px 3px rgba(0, 0, 0, 0.06), 0 0 1px rgba(0, 0, 0, 0.04);
+  --ed-shadow-card:     0 2px 6px rgba(0, 0, 0, 0.06);
+  --ed-shadow-card-hover: 0 8px 20px rgba(0, 0, 0, 0.1);
+  --ed-shadow-dropdown: 0 4px 16px rgba(0, 0, 0, 0.12), 0 0 1px rgba(0, 0, 0, 0.06);
+  --ed-shadow-modal:    0 16px 48px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.08);
+
+  /* Canvas */
+  --ed-canvas-bg:       #f8f9fb;
+
+  /* Animation durations */
+  --ed-duration-fast:   100ms;
+  --ed-duration-normal: 200ms;
+  --ed-duration-slow:   300ms;
+
+  /* Properties Panel enhancements */
+  --ed-input-shadow-inner:    inset 0 1px 2px rgba(0,0,0,0.06);
+  --ed-glow-accent:           0 0 0 3px rgba(79,70,229,0.12);
+  --ed-section-gradient-from: rgba(79,70,229,0.05);
+  --ed-section-gradient-to:   transparent;
+
+  /* Overlay */
+  --ed-overlay:         rgba(0, 0, 0, 0.4);
+  --ed-overlay-blur:    8px;
+}

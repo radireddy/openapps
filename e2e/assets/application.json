@@ -1,0 +1,164 @@
+{
+  "id": "app_1763391554443",
+  "name": "Grouping components e2e test",
+  "createdAt": "2025-11-17T14:59:14.443Z",
+  "lastModifiedAt": "2025-11-17T15:00:42.399Z",
+  "pages": [
+    {
+      "id": "page_1763391554443",
+      "name": "Main Page"
+    }
+  ],
+  "mainPageId": "page_1763391554443",
+  "components": [
+    {
+      "id": "LABEL_1763391567661",
+      "type": "LABEL",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "none",
+        "text": "New Label",
+        "width": 150,
+        "height": 40,
+        "fontSize": 16,
+        "fontWeight": "normal",
+        "color": "{{theme.colors.text}}",
+        "textAlign": "left",
+        "fontFamily": "{{theme.font.family}}",
+        "backgroundColor": "transparent",
+        "textRenderer": "javascript",
+        "x": 675.75,
+        "y": 89.5
+      },
+      "parentId": null,
+      "pageId": "page_1763391554443"
+    },
+    {
+      "id": "INPUT_1763391569320",
+      "type": "INPUT",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "{{theme.border.style}}",
+        "placeholder": "Enter text...",
+        "accessibilityLabel": "Text input field",
+        "width": 200,
+        "height": 40,
+        "disabled": false,
+        "x": 675.75,
+        "y": 139.5
+      },
+      "parentId": null,
+      "pageId": "page_1763391554443"
+    },
+    {
+      "id": "CHECKBOX_1763391574091",
+      "type": "CHECKBOX",
+      "props": {
+        "label": "Accept terms",
+        "width": 150,
+        "height": 30,
+        "opacity": 1,
+        "boxShadow": "",
+        "disabled": false,
+        "x": 675.75,
+        "y": 189.5
+      },
+      "parentId": null,
+      "pageId": "page_1763391554443"
+    },
+    {
+      "id": "DIVIDER_1763391577343",
+      "type": "DIVIDER",
+      "props": {
+        "width": 300,
+        "height": 2,
+        "color": "{{theme.colors.border}}",
+        "opacity": 1,
+        "boxShadow": "",
+        "x": 675.75,
+        "y": 229.5
+      },
+      "parentId": null,
+      "pageId": "page_1763391554443"
+    },
+    {
+      "id": "SWITCH_1763391580795",
+      "type": "SWITCH",
+      "props": {
+        "label": "Enable Feature",
+        "width": 180,
+        "height": 30,
+        "disabled": false,
+        "x": 675.75,
+        "y": 241.5
+      },
+      "parentId": null,
+      "pageId": "page_1763391554443"
+    },
+    {
+      "id": "BUTTON_1763391583398",
+      "type": "BUTTON",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "none",
+        "text": "Click Me",
+        "width": 120,
+        "height": 40,
+        "backgroundColor": "{{theme.colors.primary}}",
+        "textColor": "{{theme.colors.onPrimary}}",
+        "actionType": "none",
+        "disabled": false,
+        "x": 675.75,
+        "y": 281.5
+      },
+      "parentId": null,
+      "pageId": "page_1763391554443"
+    }
+  ],
+  "dataStore": {
+    "selectedRecord": null,
+    "newInput": "",
+    "newCheckbox": false,
+    "newSwitch": false
+  },
+  "variables": [],
+  "theme": {
+    "colors": {
+      "primary": "#4F46E5",
+      "onPrimary": "#FFFFFF",
+      "secondary": "#06B6D4",
+      "onSecondary": "#FFFFFF",
+      "background": "#FFFFFF",
+      "surface": "#F5F5F5",
+      "text": "#1A1A1A",
+      "border": "#D1D1D1"
+    },
+    "font": {
+      "family": "Segoe UI, sans-serif"
+    },
+    "border": {
+      "width": "1px",
+      "style": "solid"
+    },
+    "radius": {
+      "default": "4px"
+    },
+    "spacing": {
+      "sm": "4px",
+      "md": "8px",
+      "lg": "16px"
+    }
+  }
+}

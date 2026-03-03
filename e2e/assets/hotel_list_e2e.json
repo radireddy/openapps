@@ -1,0 +1,783 @@
+{
+  "id": "app_1764087734359",
+  "name": "Hotel list page-latest",
+  "createdAt": "2025-11-25T16:22:14.360Z",
+  "lastModifiedAt": "2025-11-29T12:28:10.350Z",
+  "pages": [
+    {
+      "id": "page_1764087734359_0",
+      "name": "Main Page"
+    }
+  ],
+  "mainPageId": "page_1764087734359_0",
+  "components": [
+    {
+      "id": "CONTAINER_1764087734359_0",
+      "type": "CONTAINER",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "{{theme.border.style}}",
+        "width": "660px",
+        "height": "250px",
+        "backgroundColor": "{{theme.colors.background}}",
+        "padding": "10px",
+        "x": 0,
+        "y": 0,
+        "zIndex": 15
+      },
+      "parentId": "LIST_1764087734359_15",
+      "pageId": "page_1764087734359_0"
+    },
+    {
+      "id": "IMAGE_1764087734359_1",
+      "type": "IMAGE",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "{{theme.border.style}}",
+        "src": "{{currentItem.hotelImage}}",
+        "alt": "Placeholder Image",
+        "width": "231px",
+        "height": "208px",
+        "objectFit": "cover",
+        "x": 14,
+        "y": 17
+      },
+      "parentId": "CONTAINER_1764087734359_0",
+      "pageId": "page_1764087734359_0"
+    },
+    {
+      "id": "LABEL_1764087734359_2",
+      "type": "LABEL",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "none",
+        "text": "{{currentItem.city}}",
+        "width": 76,
+        "height": 20,
+        "fontSize": 16,
+        "fontWeight": "normal",
+        "color": "#2ab7f4",
+        "textAlign": "left",
+        "fontFamily": "{{theme.font.family}}",
+        "backgroundColor": "transparent",
+        "textRenderer": "javascript",
+        "x": 250,
+        "y": 56
+      },
+      "parentId": "CONTAINER_1764087734359_0",
+      "pageId": "page_1764087734359_0"
+    },
+    {
+      "id": "LABEL_1764087734359_3",
+      "type": "LABEL",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "none",
+        "text": "{{currentItem.distanceFromFamousPlace}}",
+        "width": 315,
+        "height": 20,
+        "fontSize": 16,
+        "fontWeight": "normal",
+        "color": "#bdbcbc",
+        "textAlign": "left",
+        "fontFamily": "{{theme.font.family}}",
+        "backgroundColor": "transparent",
+        "textRenderer": "javascript",
+        "x": 324,
+        "y": 55
+      },
+      "parentId": "CONTAINER_1764087734359_0",
+      "pageId": "page_1764087734359_0"
+    },
+    {
+      "id": "LABEL_1764087734359_4",
+      "type": "LABEL",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "none",
+        "text": "Excellent {{currentItem.rating}} ",
+        "width": 132,
+        "height": 25,
+        "fontSize": 18,
+        "fontWeight": "bold",
+        "color": "{{theme.colors.text}}",
+        "textAlign": "right",
+        "fontFamily": "{{theme.font.family}}",
+        "backgroundColor": "transparent",
+        "textRenderer": "javascript",
+        "x": 130,
+        "y": 9
+      },
+      "parentId": "CONTAINER_1764087734359_7",
+      "pageId": "page_1764087734359_0"
+    },
+    {
+      "id": "LABEL_1764087734359_5",
+      "type": "LABEL",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "none",
+        "text": "({{currentItem.ratingCount}}  Ratings)",
+        "width": 126,
+        "height": 25,
+        "fontSize": 16,
+        "fontWeight": "normal",
+        "color": "#9a9393",
+        "textAlign": "right",
+        "fontFamily": "{{theme.font.family}}",
+        "backgroundColor": "transparent",
+        "textRenderer": "javascript",
+        "x": 141,
+        "y": 37
+      },
+      "parentId": "CONTAINER_1764087734359_7",
+      "pageId": "page_1764087734359_0"
+    },
+    {
+      "id": "LABEL_1764087734359_6",
+      "type": "LABEL",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "none",
+        "text": "{{currentItem.discountedPrice}}",
+        "width": 95,
+        "height": 25,
+        "fontSize": 22,
+        "fontWeight": "bold",
+        "color": "{{theme.colors.text}}",
+        "textAlign": "right",
+        "fontFamily": "{{theme.font.family}}",
+        "backgroundColor": "transparent",
+        "textRenderer": "javascript",
+        "x": 168,
+        "y": 78
+      },
+      "parentId": "CONTAINER_1764087734359_7",
+      "pageId": "page_1764087734359_0"
+    },
+    {
+      "id": "CONTAINER_1764087734359_7",
+      "type": "CONTAINER",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "{{theme.border.style}}",
+        "width": "273px",
+        "height": "250px",
+        "backgroundColor": "{{theme.colors.background}}",
+        "padding": "10px",
+        "x": 661,
+        "y": 0
+      },
+      "parentId": "LIST_1764087734359_15",
+      "pageId": "page_1764087734359_0"
+    },
+    {
+      "id": "LABEL_1764087734359_8",
+      "type": "LABEL",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "none",
+        "text": "+ {{currentItem.taxes}} taxes & fees",
+        "width": 168,
+        "height": 25,
+        "fontSize": 16,
+        "fontWeight": "normal",
+        "color": "#9a9393",
+        "textAlign": "right",
+        "fontFamily": "{{theme.font.family}}",
+        "backgroundColor": "transparent",
+        "textRenderer": "javascript",
+        "x": 95,
+        "y": 109
+      },
+      "parentId": "CONTAINER_1764087734359_7",
+      "pageId": "page_1764087734359_0"
+    },
+    {
+      "id": "LABEL_1764087734359_9",
+      "type": "LABEL",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "none",
+        "text": "Per Night for 2 Rooms",
+        "width": 190,
+        "height": 25,
+        "fontSize": 16,
+        "fontWeight": "normal",
+        "color": "#9a9393",
+        "textAlign": "right",
+        "fontFamily": "{{theme.font.family}}",
+        "backgroundColor": "transparent",
+        "textRenderer": "javascript",
+        "x": 76,
+        "y": 135
+      },
+      "parentId": "CONTAINER_1764087734359_7",
+      "pageId": "page_1764087734359_0"
+    },
+    {
+      "id": "BUTTON_1764087734359_10",
+      "type": "BUTTON",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "none",
+        "text": "Book now",
+        "width": 120,
+        "height": 40,
+        "backgroundColor": "{{theme.colors.primary}}",
+        "textColor": "{{theme.colors.onprimary}}",
+        "actionType": "executeCode",
+        "disabled": false,
+        "x": 134,
+        "y": 179
+      },
+      "parentId": "CONTAINER_1764087734359_7",
+      "pageId": "page_1764087734359_0"
+    },
+    {
+      "id": "LABEL_1764087734359_11",
+      "type": "LABEL",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "none",
+        "text": "{{currentItem.amenities[0]}}",
+        "width": 150,
+        "height": 28,
+        "fontSize": 14,
+        "fontWeight": "normal",
+        "color": "#639a4c",
+        "textAlign": "left",
+        "fontFamily": "{{theme.font.family}}",
+        "backgroundColor": "transparent",
+        "textRenderer": "javascript",
+        "x": 268,
+        "y": 88
+      },
+      "parentId": "CONTAINER_1764087734359_0",
+      "pageId": "page_1764087734359_0"
+    },
+    {
+      "id": "LABEL_1764087734359_12",
+      "type": "LABEL",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "none",
+        "text": "{{currentItem.amenities[1]}}",
+        "width": 291,
+        "height": 28,
+        "fontSize": 14,
+        "fontWeight": "normal",
+        "color": "#639a4c",
+        "textAlign": "left",
+        "fontFamily": "{{theme.font.family}}",
+        "backgroundColor": "transparent",
+        "textRenderer": "javascript",
+        "x": 268,
+        "y": 123
+      },
+      "parentId": "CONTAINER_1764087734359_0",
+      "pageId": "page_1764087734359_0"
+    },
+    {
+      "id": "LABEL_1764087734359_13",
+      "type": "LABEL",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "none",
+        "text": "{{currentItem.highlight}}",
+        "width": 371,
+        "height": 52,
+        "fontSize": 14,
+        "fontWeight": "normal",
+        "color": "{{theme.colors.text}}",
+        "textAlign": "left",
+        "fontFamily": "{{theme.font.family}}",
+        "backgroundColor": "transparent",
+        "textRenderer": "markdown",
+        "x": 268,
+        "y": 185
+      },
+      "parentId": "CONTAINER_1764087734359_0",
+      "pageId": "page_1764087734359_0"
+    },
+    {
+      "id": "LABEL_1764087734359_14",
+      "type": "LABEL",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "none",
+        "text": "{{currentItem.hotelName}}",
+        "width": 355,
+        "height": 36,
+        "fontSize": 24,
+        "fontWeight": "bold",
+        "color": "{{theme.colors.text}}",
+        "textAlign": "left",
+        "fontFamily": "{{theme.font.family}}",
+        "backgroundColor": "transparent",
+        "textRenderer": "javascript",
+        "x": 250,
+        "y": 13
+      },
+      "parentId": "CONTAINER_1764087734359_0",
+      "pageId": "page_1764087734359_0"
+    },
+    {
+      "id": "LIST_1764087734359_15",
+      "type": "LIST",
+      "props": {
+        "width": "950px",
+        "height": "740px",
+        "backgroundColor": "{{theme.colors.surface}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderRadius": "{{theme.radius.default}}",
+        "padding": "{{theme.spacing.sm}}",
+        "data": "{{hotels}}",
+        "itemKey": "{{index}}",
+        "templateHeight": "250",
+        "itemSpacing": "10",
+        "emptyState": "No items found",
+        "templateChildren": [],
+        "x": 408,
+        "y": 96
+      },
+      "parentId": null,
+      "pageId": "page_1764087734359_0"
+    },
+    {
+      "id": "CONTAINER_1764088748308",
+      "type": "CONTAINER",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "{{theme.border.style}}",
+        "width": "950px",
+        "height": "64px",
+        "backgroundColor": "{{theme.colors.surface}}",
+        "padding": "{{theme.spacing.sm}}",
+        "x": 408,
+        "y": 25
+      },
+      "parentId": null,
+      "pageId": "page_1764087734359_0"
+    },
+    {
+      "id": "LABEL_1764088857789",
+      "type": "LABEL",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "none",
+        "text": "{{hotels.length}} Properties available",
+        "width": 393,
+        "height": 44,
+        "fontSize": 22,
+        "fontWeight": "normal",
+        "color": "{{theme.colors.text}}",
+        "textAlign": "left",
+        "fontFamily": "{{theme.font.family}}",
+        "backgroundColor": "transparent",
+        "textRenderer": "javascript",
+        "x": 7,
+        "y": 8
+      },
+      "parentId": "CONTAINER_1764088748308",
+      "pageId": "page_1764087734359_0"
+    },
+    {
+      "id": "LABEL_1764088995445",
+      "type": "LABEL",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "none",
+        "text": "Filter hotels",
+        "width": 150,
+        "height": 40,
+        "fontSize": 22,
+        "fontWeight": "bold",
+        "color": "{{theme.colors.text}}",
+        "textAlign": "left",
+        "fontFamily": "{{theme.font.family}}",
+        "backgroundColor": "transparent",
+        "textRenderer": "javascript",
+        "x": 10,
+        "y": 15
+      },
+      "parentId": "CONTAINER_1764129580639",
+      "pageId": "page_1764087734359_0",
+      "_arranged": {
+        "LABEL_1764088995445": {
+          "x": 0,
+          "y": null
+        }
+      }
+    },
+    {
+      "id": "INPUT_1764089047432",
+      "type": "INPUT",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "4px",
+        "borderWidth": "1px",
+        "borderColor": "#e5e7eb",
+        "borderStyle": "solid",
+        "placeholder": "Enter hotel name...",
+        "dataStoreKey": "newInput",
+        "accessibilityLabel": "Text input field",
+        "inputType": "text",
+        "width": 277,
+        "height": 44,
+        "disabled": false,
+        "required": false,
+        "backgroundColor": "#ffffff",
+        "color": "#111827",
+        "fontSize": 14,
+        "fontWeight": "normal",
+        "fontStyle": "normal",
+        "x": 10,
+        "y": 89,
+        "onChangeActionType": "executeCode",
+        "onChangeAlertMessage": "hey",
+        "value": "",
+        "onChangeCodeToExecute": "{{ (() => {\n    console.log(\"on value change\")\n    const value = event.target.value;\n    \n    if (value.length >= 3) {\n      const filteredHotels = allHotels.filter(hotel =>  hotel.hotelName.toLowerCase().includes(value.toLowerCase()));\n      actions.updateVariable(\"hotels\", filteredHotels);\n    }\n    if (value.length === 0) {\n      actions.updateVariable(\"hotels\", allHotels);\n    }\n  })()\n}}",
+        "onFocusActionType": "executeCode",
+        "onBlurActionType": "executeCode",
+        "onEnterKeyPressActionType": "none",
+        "onFocusAlertMessage": "on focus",
+        "onBlurAlertMessage": "on blur",
+        "onEnterKeyPressAlertMessage": "on enter",
+        "onFocusCodeToExecute": "{{ console.log(\"on focus\") }}",
+        "onBlurCodeToExecute": "{{ console.log(\"on blur\") }}",
+        "onEnterActionType": "executeCode",
+        "onEnterCodeToExecute": "{{ console.log(\"on enter\") }}"
+      },
+      "parentId": "CONTAINER_1764129580639",
+      "pageId": "page_1764087734359_0",
+      "_arranged": {
+        "INPUT_1764089047432": {
+          "x": 0,
+          "y": null
+        }
+      }
+    },
+    {
+      "id": "LABEL_1764090143273",
+      "type": "LABEL",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "none",
+        "text": "{{currentItem.amenities[2]}}",
+        "width": 150,
+        "height": 28,
+        "fontSize": 16,
+        "fontWeight": "normal",
+        "color": "#639a4c",
+        "textAlign": "left",
+        "fontFamily": "{{theme.font.family}}",
+        "backgroundColor": "transparent",
+        "textRenderer": "javascript",
+        "x": 268,
+        "y": 155
+      },
+      "parentId": "CONTAINER_1764087734359_0",
+      "pageId": "page_1764087734359_0"
+    },
+    {
+      "id": "RADIO_GROUP_1764128368173",
+      "type": "RADIO_GROUP",
+      "props": {
+        "dataStoreKey": "newRadio",
+        "options": "5 star, 4.8 and above, 4.5 and above, 4 and above",
+        "groupLabel": "Choose an option",
+        "width": 159,
+        "height": 130,
+        "disabled": false,
+        "x": 15,
+        "y": 200,
+        "defaultValue": "4.5 and above"
+      },
+      "parentId": "CONTAINER_1764129580639",
+      "pageId": "page_1764087734359_0",
+      "_arranged": {
+        "LABEL_1764088995445": {
+          "x": 0,
+          "y": null
+        },
+        "INPUT_1764089047432": {
+          "x": 160,
+          "y": null
+        },
+        "RADIO_GROUP_1764128368173": {
+          "x": 447,
+          "y": null
+        }
+      }
+    },
+    {
+      "id": "LABEL_1764129497453",
+      "type": "LABEL",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "none",
+        "text": "Star category",
+        "width": 167,
+        "height": 30,
+        "fontSize": 16,
+        "fontWeight": "bold",
+        "color": "{{theme.colors.text}}",
+        "textAlign": "left",
+        "fontFamily": "{{theme.font.family}}",
+        "backgroundColor": "transparent",
+        "textRenderer": "javascript",
+        "x": 10,
+        "y": 162
+      },
+      "parentId": "CONTAINER_1764129580639",
+      "pageId": "page_1764087734359_0",
+      "_arranged": {
+        "LABEL_1764088995445": {
+          "x": null,
+          "y": 0
+        },
+        "RADIO_GROUP_1764128368173": {
+          "x": null,
+          "y": 50
+        },
+        "LABEL_1764129497453": {
+          "x": null,
+          "y": 190
+        }
+      }
+    },
+    {
+      "id": "CONTAINER_1764129580639",
+      "type": "CONTAINER",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "{{theme.border.style}}",
+        "width": "314px",
+        "height": "812px",
+        "backgroundColor": "{{theme.colors.surface}}",
+        "padding": "{{theme.spacing.sm}}",
+        "x": 87,
+        "y": 25
+      },
+      "parentId": null,
+      "pageId": "page_1764087734359_0"
+    },
+    {
+      "id": "LABEL_1764130262167",
+      "type": "LABEL",
+      "props": {
+        "opacity": 1,
+        "boxShadow": "",
+        "borderRadius": "{{theme.radius.default}}",
+        "borderWidth": "{{theme.border.width}}",
+        "borderColor": "{{theme.colors.border}}",
+        "borderStyle": "none",
+        "text": "User rating",
+        "width": 151,
+        "height": 30,
+        "fontSize": 16,
+        "fontWeight": "bold",
+        "color": "{{theme.colors.text}}",
+        "textAlign": "left",
+        "fontFamily": "{{theme.font.family}}",
+        "backgroundColor": "transparent",
+        "textRenderer": "javascript",
+        "x": 10,
+        "y": 343
+      },
+      "parentId": "CONTAINER_1764129580639",
+      "pageId": "page_1764087734359_0"
+    },
+    {
+      "id": "CHECKBOX_1764130300796",
+      "type": "CHECKBOX",
+      "props": {
+        "label": "Outstanding: 5",
+        "dataStoreKey": "outstandingRating",
+        "width": 150,
+        "height": 30,
+        "opacity": 1,
+        "boxShadow": "",
+        "disabled": false,
+        "onChangeActionType": "none",
+        "x": 15,
+        "y": 385
+      },
+      "parentId": "CONTAINER_1764129580639",
+      "pageId": "page_1764087734359_0"
+    },
+    {
+      "id": "CHECKBOX_1764130305427",
+      "type": "CHECKBOX",
+      "props": {
+        "label": "Excellent: 4.8+",
+        "dataStoreKey": "excellentRating",
+        "width": 150,
+        "height": 30,
+        "opacity": 1,
+        "boxShadow": "",
+        "disabled": false,
+        "onChangeActionType": "none",
+        "x": 15,
+        "y": 424
+      },
+      "parentId": "CONTAINER_1764129580639",
+      "pageId": "page_1764087734359_0"
+    },
+    {
+      "id": "CHECKBOX_1764130309276",
+      "type": "CHECKBOX",
+      "props": {
+        "label": "Very good: 4.5+",
+        "dataStoreKey": "veryGoodRating",
+        "width": 150,
+        "height": 30,
+        "opacity": 1,
+        "boxShadow": "",
+        "disabled": false,
+        "onChangeActionType": "none",
+        "x": 15,
+        "y": 463
+      },
+      "parentId": "CONTAINER_1764129580639",
+      "pageId": "page_1764087734359_0"
+    }
+  ],
+  "dataStore": {
+    "selectedRecord": null,
+    "newInput": "",
+    "newSwitch": false,
+    "newCheckbox": false,
+    "newRadio": "",
+    "INPUT_1764089047432": ""
+  },
+  "dataSources": [],
+  "variables": [
+    {
+      "id": "var_1764089952648",
+      "name": "hotels",
+      "type": "array_of_objects",
+      "initialValue": "[\n  {\n    \"hotelImage\": \"https://images.unsplash.com/photo-1501117716987-c8e1ecb2100d\",\n    \"hotelName\": \"Celestial Crown Palace\",\n    \"city\": \"Dubai\",\n    \"distanceFromFamousPlace\": \"0.8 km from Burj Khalifa\",\n    \"amenities\": [\"Infinity Pool\", \"Private Beach\", \"Butler Service\", \"Sky Lounge\", \"Luxury Spa\"],\n    \"highlight\": \"**Panoramic Dubai skyline views** from ultra-luxury sky suites.\",\n    \"rating\": 4.9,\n    \"ratingCount\": 5221,\n    \"totalPrice\": 95000,\n    \"discountedPrice\": 78900,\n    \"taxes\": 4500,\n    \"pricePerRoomPerDay\": 39450\n  },\n  {\n    \"hotelImage\": \"https://images.unsplash.com/photo-1496417263034-38ec4f0b665a\",\n    \"hotelName\": \"Imperial Sapphire Retreat\",\n    \"city\": \"Paris\",\n    \"distanceFromFamousPlace\": \"1.2 km from Eiffel Tower\",\n    \"amenities\": [\"Gourmet Dining\", \"Couple Spa\", \"Private Chauffeur\", \"Gym\", \"Indoor Pool\"],\n    \"highlight\": \"*Romantic French luxury* with **royal-style decor** and fine dining.\",\n    \"rating\": 4.8,\n    \"ratingCount\": 3410,\n    \"totalPrice\": 88000,\n    \"discountedPrice\": 74200,\n    \"taxes\": 4200,\n    \"pricePerRoomPerDay\": 37100\n  },\n  {\n    \"hotelImage\": \"https://images.unsplash.com/photo-1520250497591-112f2f40a3f4\",\n    \"hotelName\": \"The Grand Phoenix\",\n    \"city\": \"Tokyo\",\n    \"distanceFromFamousPlace\": \"0.5 km from Tokyo Tower\",\n    \"amenities\": [\"Onsen Spa\", \"Tea Ceremony Lounge\", \"Fine Dining\", \"Private Suites\", \"Sky Observatory\"],\n    \"highlight\": \"A fusion of **Japanese tradition** and *futuristic luxury*.\",\n    \"rating\": 4.9,\n    \"ratingCount\": 4891,\n    \"totalPrice\": 91000,\n    \"discountedPrice\": 78500,\n    \"taxes\": 4800,\n    \"pricePerRoomPerDay\": 39250\n  },\n  {\n    \"hotelImage\": \"https://images.unsplash.com/photo-1535827841776-24afc1e255ac\",\n    \"hotelName\": \"Royal Orchid Dynasty\",\n    \"city\": \"Singapore\",\n    \"distanceFromFamousPlace\": \"0.6 km from Marina Bay Sands\",\n    \"amenities\": [\"Infinity Pool\", \"Garden Terrace\", \"Butler Service\", \"Luxury Spa\", \"Private Dining\"],\n    \"highlight\": \"Award-winning hospitality with **sky-garden inspired architecture**.\",\n    \"rating\": 4.7,\n    \"ratingCount\": 4120,\n    \"totalPrice\": 87000,\n    \"discountedPrice\": 72800,\n    \"taxes\": 3900,\n    \"pricePerRoomPerDay\": 36400\n  },\n  {\n    \"hotelImage\": \"https://images.unsplash.com/photo-1502673530728-f79b4cab31b1\",\n    \"hotelName\": \"Majestic Crown Residency\",\n    \"city\": \"London\",\n    \"distanceFromFamousPlace\": \"1.0 km from Buckingham Palace\",\n    \"amenities\": [\"Heated Pool\", \"Royal Bar\", \"Classic High Tea\", \"Spa\", \"Private Limo\"],\n    \"highlight\": \"**British royal luxury** with classic interiors & high-end service.\",\n    \"rating\": 4.8,\n    \"ratingCount\": 3588,\n    \"totalPrice\": 94000,\n    \"discountedPrice\": 79900,\n    \"taxes\": 4300,\n    \"pricePerRoomPerDay\": 39950\n  },\n  {\n    \"hotelImage\": \"https://images.unsplash.com/photo-1542317854-9c9d632b3f7b\",\n    \"hotelName\": \"Eternal Lotus Palace\",\n    \"city\": \"Beijing\",\n    \"distanceFromFamousPlace\": \"1.5 km from Forbidden City\",\n    \"amenities\": [\"Cultural Spa\", \"Imperial Dining\", \"Tea Lounge\", \"Indoor Pool\", \"Concierge Service\"],\n    \"highlight\": \"Inspired by **imperial Chinese architecture** with modern luxury elements.\",\n    \"rating\": 4.7,\n    \"ratingCount\": 3922,\n    \"totalPrice\": 85500,\n    \"discountedPrice\": 71900,\n    \"taxes\": 3800,\n    \"pricePerRoomPerDay\": 35950\n  },\n  {\n    \"hotelImage\": \"https://images.unsplash.com/photo-1521737708686-68ce3f4e7e4d\",\n    \"hotelName\": \"Ocean Pearl Royal Suites\",\n    \"city\": \"Sydney\",\n    \"distanceFromFamousPlace\": \"0.9 km from Sydney Opera House\",\n    \"amenities\": [\"Harbour View Rooms\", \"Spa\", \"Infinity Pool\", \"Private Yacht Access\", \"Fine Dining\"],\n    \"highlight\": \"Unmatched **harbour-front luxury** with panoramic ocean views.\",\n    \"rating\": 4.9,\n    \"ratingCount\": 5013,\n    \"totalPrice\": 96000,\n    \"discountedPrice\": 81500,\n    \"taxes\": 4700,\n    \"pricePerRoomPerDay\": 40750\n  },\n  {\n    \"hotelImage\": \"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267\",\n    \"hotelName\": \"Crown Jewel Imperial Suites\",\n    \"city\": \"New York\",\n    \"distanceFromFamousPlace\": \"1.3 km from Times Square\",\n    \"amenities\": [\"Gym\", \"Spa\", \"Penthouse Suites\", \"Butler Service\", \"Fine Dining\"],\n    \"highlight\": \"**Skyscraper-level luxury** overlooking the NYC skyline.\",\n    \"rating\": 4.8,\n    \"ratingCount\": 4672,\n    \"totalPrice\": 98500,\n    \"discountedPrice\": 82900,\n    \"taxes\": 4950,\n    \"pricePerRoomPerDay\": 41450\n  },\n  {\n    \"hotelImage\": \"https://images.unsplash.com/photo-1551882547-ff40c63fe5fa\",\n    \"hotelName\": \"Regal Desert Mirage Palace\",\n    \"city\": \"Riyadh\",\n    \"distanceFromFamousPlace\": \"2.0 km from Kingdom Centre Tower\",\n    \"amenities\": [\"Spa\", \"Private Pool Villas\", \"Desert Safari\", \"Royal Lounge\", \"Gym\"],\n    \"highlight\": \"**Desert-themed ultra-luxury** villas with private pools.\",\n    \"rating\": 4.7,\n    \"ratingCount\": 3549,\n    \"totalPrice\": 89000,\n    \"discountedPrice\": 74800,\n    \"taxes\": 4100,\n    \"pricePerRoomPerDay\": 37400\n  },\n  {\n    \"hotelImage\": \"https://images.unsplash.com/photo-1505381009984-42529f2a6b01\",\n    \"hotelName\": \"The Grand Maharaja Palace\",\n    \"city\": \"Udaipur\",\n    \"distanceFromFamousPlace\": \"1.1 km from City Palace\",\n    \"amenities\": [\"Lake View Rooms\", \"Boat Access\", \"Spa\", \"Cultural Shows\", \"Royal Dining\"],\n    \"highlight\": \"Experience **royal Rajasthani hospitality** with serene lake views.\",\n    \"rating\": 4.9,\n    \"ratingCount\": 5338,\n    \"totalPrice\": 87000,\n    \"discountedPrice\": 73900,\n    \"taxes\": 3850,\n    \"pricePerRoomPerDay\": 36950\n  }\n]"
+    },
+    {
+      "id": "var_1764128057404",
+      "name": "allHotels",
+      "type": "array_of_objects",
+      "initialValue": "[\n  {\n    \"hotelImage\": \"https://images.unsplash.com/photo-1501117716987-c8e1ecb2100d\",\n    \"hotelName\": \"Celestial Crown Palace\",\n    \"city\": \"Dubai\",\n    \"distanceFromFamousPlace\": \"0.8 km from Burj Khalifa\",\n    \"amenities\": [\"Infinity Pool\", \"Private Beach\", \"Butler Service\", \"Sky Lounge\", \"Luxury Spa\"],\n    \"highlight\": \"**Panoramic Dubai skyline views** from ultra-luxury sky suites.\",\n    \"rating\": 4.9,\n    \"ratingCount\": 5221,\n    \"totalPrice\": 95000,\n    \"discountedPrice\": 78900,\n    \"taxes\": 4500,\n    \"pricePerRoomPerDay\": 39450\n  },\n  {\n    \"hotelImage\": \"https://images.unsplash.com/photo-1496417263034-38ec4f0b665a\",\n    \"hotelName\": \"Imperial Sapphire Retreat\",\n    \"city\": \"Paris\",\n    \"distanceFromFamousPlace\": \"1.2 km from Eiffel Tower\",\n    \"amenities\": [\"Gourmet Dining\", \"Couple Spa\", \"Private Chauffeur\", \"Gym\", \"Indoor Pool\"],\n    \"highlight\": \"*Romantic French luxury* with **royal-style decor** and fine dining.\",\n    \"rating\": 4.8,\n    \"ratingCount\": 3410,\n    \"totalPrice\": 88000,\n    \"discountedPrice\": 74200,\n    \"taxes\": 4200,\n    \"pricePerRoomPerDay\": 37100\n  },\n  {\n    \"hotelImage\": \"https://images.unsplash.com/photo-1520250497591-112f2f40a3f4\",\n    \"hotelName\": \"The Grand Phoenix\",\n    \"city\": \"Tokyo\",\n    \"distanceFromFamousPlace\": \"0.5 km from Tokyo Tower\",\n    \"amenities\": [\"Onsen Spa\", \"Tea Ceremony Lounge\", \"Fine Dining\", \"Private Suites\", \"Sky Observatory\"],\n    \"highlight\": \"A fusion of **Japanese tradition** and *futuristic luxury*.\",\n    \"rating\": 4.9,\n    \"ratingCount\": 4891,\n    \"totalPrice\": 91000,\n    \"discountedPrice\": 78500,\n    \"taxes\": 4800,\n    \"pricePerRoomPerDay\": 39250\n  },\n  {\n    \"hotelImage\": \"https://images.unsplash.com/photo-1535827841776-24afc1e255ac\",\n    \"hotelName\": \"Royal Orchid Dynasty\",\n    \"city\": \"Singapore\",\n    \"distanceFromFamousPlace\": \"0.6 km from Marina Bay Sands\",\n    \"amenities\": [\"Infinity Pool\", \"Garden Terrace\", \"Butler Service\", \"Luxury Spa\", \"Private Dining\"],\n    \"highlight\": \"Award-winning hospitality with **sky-garden inspired architecture**.\",\n    \"rating\": 4.7,\n    \"ratingCount\": 4120,\n    \"totalPrice\": 87000,\n    \"discountedPrice\": 72800,\n    \"taxes\": 3900,\n    \"pricePerRoomPerDay\": 36400\n  },\n  {\n    \"hotelImage\": \"https://images.unsplash.com/photo-1502673530728-f79b4cab31b1\",\n    \"hotelName\": \"Majestic Crown Residency\",\n    \"city\": \"London\",\n    \"distanceFromFamousPlace\": \"1.0 km from Buckingham Palace\",\n    \"amenities\": [\"Heated Pool\", \"Royal Bar\", \"Classic High Tea\", \"Spa\", \"Private Limo\"],\n    \"highlight\": \"**British royal luxury** with classic interiors & high-end service.\",\n    \"rating\": 4.8,\n    \"ratingCount\": 3588,\n    \"totalPrice\": 94000,\n    \"discountedPrice\": 79900,\n    \"taxes\": 4300,\n    \"pricePerRoomPerDay\": 39950\n  },\n  {\n    \"hotelImage\": \"https://images.unsplash.com/photo-1542317854-9c9d632b3f7b\",\n    \"hotelName\": \"Eternal Lotus Palace\",\n    \"city\": \"Beijing\",\n    \"distanceFromFamousPlace\": \"1.5 km from Forbidden City\",\n    \"amenities\": [\"Cultural Spa\", \"Imperial Dining\", \"Tea Lounge\", \"Indoor Pool\", \"Concierge Service\"],\n    \"highlight\": \"Inspired by **imperial Chinese architecture** with modern luxury elements.\",\n    \"rating\": 4.7,\n    \"ratingCount\": 3922,\n    \"totalPrice\": 85500,\n    \"discountedPrice\": 71900,\n    \"taxes\": 3800,\n    \"pricePerRoomPerDay\": 35950\n  },\n  {\n    \"hotelImage\": \"https://images.unsplash.com/photo-1521737708686-68ce3f4e7e4d\",\n    \"hotelName\": \"Ocean Pearl Royal Suites\",\n    \"city\": \"Sydney\",\n    \"distanceFromFamousPlace\": \"0.9 km from Sydney Opera House\",\n    \"amenities\": [\"Harbour View Rooms\", \"Spa\", \"Infinity Pool\", \"Private Yacht Access\", \"Fine Dining\"],\n    \"highlight\": \"Unmatched **harbour-front luxury** with panoramic ocean views.\",\n    \"rating\": 4.9,\n    \"ratingCount\": 5013,\n    \"totalPrice\": 96000,\n    \"discountedPrice\": 81500,\n    \"taxes\": 4700,\n    \"pricePerRoomPerDay\": 40750\n  },\n  {\n    \"hotelImage\": \"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267\",\n    \"hotelName\": \"Crown Jewel Imperial Suites\",\n    \"city\": \"New York\",\n    \"distanceFromFamousPlace\": \"1.3 km from Times Square\",\n    \"amenities\": [\"Gym\", \"Spa\", \"Penthouse Suites\", \"Butler Service\", \"Fine Dining\"],\n    \"highlight\": \"**Skyscraper-level luxury** overlooking the NYC skyline.\",\n    \"rating\": 4.8,\n    \"ratingCount\": 4672,\n    \"totalPrice\": 98500,\n    \"discountedPrice\": 82900,\n    \"taxes\": 4950,\n    \"pricePerRoomPerDay\": 41450\n  },\n  {\n    \"hotelImage\": \"https://images.unsplash.com/photo-1551882547-ff40c63fe5fa\",\n    \"hotelName\": \"Regal Desert Mirage Palace\",\n    \"city\": \"Riyadh\",\n    \"distanceFromFamousPlace\": \"2.0 km from Kingdom Centre Tower\",\n    \"amenities\": [\"Spa\", \"Private Pool Villas\", \"Desert Safari\", \"Royal Lounge\", \"Gym\"],\n    \"highlight\": \"**Desert-themed ultra-luxury** villas with private pools.\",\n    \"rating\": 4.7,\n    \"ratingCount\": 3549,\n    \"totalPrice\": 89000,\n    \"discountedPrice\": 74800,\n    \"taxes\": 4100,\n    \"pricePerRoomPerDay\": 37400\n  },\n  {\n    \"hotelImage\": \"https://images.unsplash.com/photo-1505381009984-42529f2a6b01\",\n    \"hotelName\": \"The Grand Maharaja Palace\",\n    \"city\": \"Udaipur\",\n    \"distanceFromFamousPlace\": \"1.1 km from City Palace\",\n    \"amenities\": [\"Lake View Rooms\", \"Boat Access\", \"Spa\", \"Cultural Shows\", \"Royal Dining\"],\n    \"highlight\": \"Experience **royal Rajasthani hospitality** with serene lake views.\",\n    \"rating\": 4.9,\n    \"ratingCount\": 5338,\n    \"totalPrice\": 87000,\n    \"discountedPrice\": 73900,\n    \"taxes\": 3850,\n    \"pricePerRoomPerDay\": 36950\n  }\n]"
+    }
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#4F46E5",
+      "onPrimary": "#FFFFFF",
+      "secondary": "#06B6D4",
+      "onSecondary": "#FFFFFF",
+      "background": "#FFFFFF",
+      "surface": "#F5F5F5",
+      "text": "#1A1A1A",
+      "border": "#D1D1D1"
+    },
+    "font": {
+      "family": "Segoe UI, sans-serif"
+    },
+    "border": {
+      "width": "1px",
+      "style": "solid"
+    },
+    "radius": {
+      "default": "5px"
+    },
+    "spacing": {
+      "sm": "4px",
+      "md": "8px",
+      "lg": "16px"
+    }
+  }
+}

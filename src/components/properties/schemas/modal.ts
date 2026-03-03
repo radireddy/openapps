@@ -1,0 +1,167 @@
+/**
+ * Modal Property Schema
+ *
+ * Extends base container schema with modal-specific properties:
+ * isOpen, title, size, showCloseButton, closeOnBackdrop, closeOnEsc, onClose, onOpen, backdrop
+ */
+
+import { ComponentType } from '../../../types';
+import { ComponentPropertySchema, PropertyMetadata, PropertyGroup } from '../metadata';
+import { createBaseContainerSchema } from './base-container';
+
+const modalProperties: PropertyMetadata[] = [
+  {
+    id: 'title',
+    label: 'Title',
+    type: 'string',
+    defaultValue: 'Modal Title',
+    group: 'Basic',
+    tab: 'General',
+    tabOrder: 0,
+    groupOrder: 0,
+    propertyOrder: -3,
+    applicableTo: [ComponentType.MODAL],
+    tooltip: 'Modal dialog title',
+    placeholder: 'e.g. Confirm Action',
+  },
+  {
+    id: 'isOpen',
+    label: 'Is Open',
+    type: 'expression',
+    defaultValue: '{{false}}',
+    supportsExpression: true,
+    group: 'Basic',
+    tab: 'General',
+    tabOrder: 0,
+    groupOrder: 0,
+    propertyOrder: -2,
+    applicableTo: [ComponentType.MODAL],
+    tooltip: 'Expression controlling whether the modal is open',
+    placeholder: 'e.g. {{showModal}}',
+  },
+  {
+    id: 'size',
+    label: 'Size',
+    type: 'dropdown',
+    defaultValue: 'md',
+    group: 'Basic',
+    tab: 'General',
+    tabOrder: 0,
+    groupOrder: 0,
+    propertyOrder: -1,
+    applicableTo: [ComponentType.MODAL],
+    tooltip: 'Modal size preset',
+    options: [
+      { value: 'sm', label: 'Small (400px)' },
+      { value: 'md', label: 'Medium (560px)' },
+      { value: 'lg', label: 'Large (720px)' },
+      { value: 'xl', label: 'Extra Large (960px)' },
+      { value: 'fullscreen', label: 'Fullscreen' },
+    ],
+  },
+  {
+    id: 'showCloseButton',
+    label: 'Show Close Button',
+    type: 'boolean',
+    defaultValue: true,
+    group: 'Behavior',
+    tab: 'General',
+    tabOrder: 0,
+    groupOrder: 3,
+    propertyOrder: 0,
+    applicableTo: [ComponentType.MODAL],
+    tooltip: 'Show the X close button in the header',
+  },
+  {
+    id: 'closeOnBackdrop',
+    label: 'Close on Backdrop Click',
+    type: 'boolean',
+    defaultValue: true,
+    group: 'Behavior',
+    tab: 'General',
+    tabOrder: 0,
+    groupOrder: 3,
+    propertyOrder: 1,
+    applicableTo: [ComponentType.MODAL],
+    tooltip: 'Close modal when clicking outside',
+  },
+  {
+    id: 'closeOnEsc',
+    label: 'Close on Escape',
+    type: 'boolean',
+    defaultValue: true,
+    group: 'Behavior',
+    tab: 'General',
+    tabOrder: 0,
+    groupOrder: 3,
+    propertyOrder: 2,
+    applicableTo: [ComponentType.MODAL],
+    tooltip: 'Close modal when pressing Escape key',
+  },
+  {
+    id: 'backdrop',
+    label: 'Backdrop',
+    type: 'dropdown',
+    defaultValue: 'dark',
+    group: 'Behavior',
+    tab: 'General',
+    tabOrder: 0,
+    groupOrder: 3,
+    propertyOrder: 3,
+    applicableTo: [ComponentType.MODAL],
+    tooltip: 'Backdrop overlay style',
+    options: [
+      { value: 'dark', label: 'Dark' },
+      { value: 'light', label: 'Light' },
+      { value: 'none', label: 'None' },
+    ],
+  },
+  {
+    id: 'onClose',
+    label: 'On Close',
+    type: 'code',
+    defaultValue: '',
+    supportsExpression: true,
+    group: 'Events',
+    tab: 'Events',
+    tabOrder: 4,
+    groupOrder: 0,
+    propertyOrder: 0,
+    applicableTo: [ComponentType.MODAL],
+    tooltip: 'Expression to execute when modal closes',
+    placeholder: "e.g. {{actions.updateVariable('showModal', false)}}",
+  },
+  {
+    id: 'onOpen',
+    label: 'On Open',
+    type: 'code',
+    defaultValue: '',
+    supportsExpression: true,
+    group: 'Events',
+    tab: 'Events',
+    tabOrder: 4,
+    groupOrder: 0,
+    propertyOrder: 1,
+    applicableTo: [ComponentType.MODAL],
+    tooltip: 'Expression to execute when modal opens',
+    placeholder: "e.g. {{actions.updateVariable('formData', {})}}",
+  },
+];
+
+const modalGroups: PropertyGroup[] = [
+  {
+    id: 'Behavior',
+    label: 'Behavior',
+    tab: 'General',
+    order: 3,
+    collapsible: true,
+    defaultCollapsed: false,
+  },
+];
+
+export const modalSchema: ComponentPropertySchema = createBaseContainerSchema(
+  ComponentType.MODAL,
+  modalProperties,
+  [],
+  modalGroups
+);
